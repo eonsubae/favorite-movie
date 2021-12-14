@@ -23,7 +23,11 @@ class CoreDataManager {
         
         do {
             let favoriteMovie = try persistentContainer.viewContext.fetch(fetchRequest)
-            return mapFavoriteToDefault(favoriteMovie[0])
+            if favoriteMovie.count != 0 {
+                return mapFavoriteToDefault(favoriteMovie[0])
+            } else {
+                return nil
+            }
         } catch {
             print("Failed to load favorite movies : \(error)")
             return nil

@@ -42,7 +42,7 @@ struct MovieService {
     }
     
     func fetchOneFavoriteMovie(_ movie: Movie, completion: @escaping(Movie) -> Void) {
-        guard let favoriteMovie = coreDataManager.findOneFavoriteMovie(movie: movie) else { return }
+        guard let favoriteMovie: Movie = coreDataManager.findOneFavoriteMovie(movie: movie) else { return }
         completion(favoriteMovie)
     }
     

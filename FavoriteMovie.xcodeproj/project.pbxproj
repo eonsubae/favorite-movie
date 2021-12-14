@@ -72,8 +72,6 @@
 		14A70C2B27646FA700A4FC90 = {
 			isa = PBXGroup;
 			children = (
-				14A70C7227660A5A00A4FC90 /* FavoriteMovie+CoreDataClass.swift */,
-				14A70C7327660A5A00A4FC90 /* FavoriteMovie+CoreDataProperties.swift */,
 				14A70C3627646FA700A4FC90 /* FavoriteMovie */,
 				14A70C3527646FA700A4FC90 /* Products */,
 			);
@@ -166,6 +164,7 @@
 		14A70C5C27650F7300A4FC90 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				14A70C822768873400A4FC90 /* CoreData */,
 				14A70C5D27650F8800A4FC90 /* MovieListResponse.swift */,
 			);
 			path = Data;
@@ -185,6 +184,15 @@
 				14A70C562764915300A4FC90 /* MovieCell.swift */,
 			);
 			path = TavleViewCell;
+			sourceTree = "<group>";
+		};
+		14A70C822768873400A4FC90 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				14A70C7227660A5A00A4FC90 /* FavoriteMovie+CoreDataClass.swift */,
+				14A70C7327660A5A00A4FC90 /* FavoriteMovie+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
