@@ -1,10 +1,6 @@
 import UIKit
 import WebKit
 
-protocol MovieDetailDelegate: AnyObject {
-    func changeMovie(changedMovie: Movie)
-}
-
 class MovieDetailViewController: UIViewController {
     
     // MARK: - Properties
